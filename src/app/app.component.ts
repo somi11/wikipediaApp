@@ -3,11 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { PageListComponent } from './page-list/page-list.component';
 import { WikipediaService } from './wikipedia.service';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SearchBarComponent, PageListComponent],
+  imports: [RouterOutlet, SearchBarComponent, PageListComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
